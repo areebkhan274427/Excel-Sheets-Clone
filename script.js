@@ -260,7 +260,7 @@ function addSheet() {
     var myArr = [...localStorageArr, matrix];
     localStorage.setItem("ArrMatrix", JSON.stringify(myArr));
     sheetContainer.innerHTML += `
-    <div style="text-decoration: underline;" onclick='sheetSelect(${numSheets-1})'>Sheet${numSheets}</div>
+    <div style="text-decoration: underline; cursor: pointer;" onclick='sheetSelect(${numSheets-1})'>Sheet${numSheets}</div>
   
     `;
   }
